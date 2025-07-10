@@ -1,7 +1,7 @@
 from collections.abc import Generator, Iterable
 import math
 from typing import SupportsFloat
-from vecpy.exceptions.exceptions import DimensionError
+from veclib.exceptions.exceptions import DimensionError
 
 class Vector:
     """

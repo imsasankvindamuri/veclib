@@ -1,26 +1,5 @@
-[project]
-name = "vecpy"
-version = "0.1.0"
-description = "The `pathlib` of vector mathematics."
-authors = [
-    {name = "imsasankvindamuri",email = "imsasankvindamuri@gmail.com"}
-]
-readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)"
-]
-keywords = ["vector", "mathematics", "physics", "geometry"]
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry]
-name = "vecpy"
+name = "veclib"
 version = "0.1.0"
 description = "The `pathlib` of vector mathematics."
 authors = ["imsasankvindamuri <imsasankvindamuri@gmail.com>"]
@@ -29,3 +8,10 @@ packages = [{include = "vecpy", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

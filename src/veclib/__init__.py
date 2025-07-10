@@ -1,4 +1,4 @@
-# src/vecpy/__init__.py
+# src/veclib/__init__.py
 
 from .vector.vector import Vector
 
