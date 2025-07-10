@@ -38,7 +38,7 @@ print(v1.distance_to(v2))    # Euclidean distance
 `veclib` is inspired by the elegance and minimalism of `pathlib`. Instead of writing low-level
 vector operations over and over again, this library lets you express vector math clearly and naturally.
 
-You don’t have to worry about dimensionality errors — those are caught and raised as meaningful exceptions.
+You don't have to worry about dimensionality errors — those are caught and raised as meaningful exceptions.
 
 ---
 
@@ -53,11 +53,51 @@ You don’t have to worry about dimensionality errors — those are caught and r
 
 ## Installation
 
+Currently, there is only one way to install this module, and that is to build from source.
+
+### Install from Source
+
+If you prefer to build from source or want the latest development version:
+
 ```bash
-pip install veclib
+# Clone the repository
+git clone https://github.com/imsasankvindamuri/veclib.git
+cd veclib
+
+# Install using pip (creates an editable installation)
+pip install -e .
+
+# Or install using Poetry (if you have it)
+poetry install
 ```
 
-(Currently under development — not published yet.)
+### Local Development Setup
+
+For development or if you want to modify the source:
+
+```bash
+# Clone the repository
+git clone https://github.com/imsasankvindamuri/veclib.git
+cd veclib
+
+# Install in development mode
+pip install -e .
+
+# Or add the directory to your Python path
+export PYTHONPATH="${PYTHONPATH}:/path/to/veclib"
+```
+
+Since `veclib` is currently a single-file module, you can simply:
+
+1. Download the needed file (e.g.: [vector.py](./src/veclib/vector/vector.py)) from the repository
+2. Place it in your project directory, then import as usual.
+
+---
+
+## Requirements
+
+- Python 3.10+
+- No external dependencies
 
 ---
 
