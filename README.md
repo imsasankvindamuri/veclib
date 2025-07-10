@@ -89,7 +89,7 @@ export PYTHONPATH="${PYTHONPATH}:/path/to/veclib"
 
 Since `veclib` is currently a single-file module, you can simply:
 
-1. Download the needed file (e.g.: [vector.py](./src/veclib/vector/vector.py)) from the repository
+1. Download the needed folder [veclib](./src/veclib) from the repository
 2. Place it in your project directory, then import as usual.
 
 ---
